@@ -200,11 +200,18 @@ h4 {
 
 @media (max-width: 600px) {
   .about {
-    max-width: 80%;
-    padding: 120px 16px 120px 16px;
+    width: auto;
+    max-width: none;
+
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+
+    padding: 100px 0 120px 0;
   }
 
   .about h4 {
+    width: 100%;
     font-size: 22px;
     line-height: 1.5;
   }
