@@ -200,13 +200,16 @@ h4 {
 
 @media (max-width: 600px) {
   .about {
-    max-width: 80%;
-    padding: 120px 16px 120px 16px;
+    width: auto;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    padding: 120px 35px;
   }
 
   .about h4 {
-    font-size: 22px;
-    line-height: 1.5;
+    font-size: 24px;
   }
 }
 /* ===== My Projects רשימה ===== */
@@ -425,25 +428,37 @@ h4 {
   }
 }
 
-/* פלאפון */
 @media (max-width: 600px) {
-  .image-row {
-    grid-template-columns: 1fr;
-    gap: 28px;
 
-    padding: 110px 22px 100px 22px;
-    margin-top: 20px;
+  .image-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    padding: 100px 20px;
+    margin: 0;
+    box-sizing: border-box;
   }
 
   .project-card {
-    min-height: 280px;
-    padding: 16px;
+    background: none;
+    padding: 0;
+    min-height: 0;
+    width: 100%;
+    display: block;
   }
 
   .project-card img,
   .project-card video {
-    max-width: 100%;
-    max-height: 240px;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    height: auto;
+    display: block;
+  }
+
+  .project-card:hover {
+    background: none;
   }
 }
 
@@ -539,7 +554,7 @@ h4 {
   }
 
   .image-text img {
-    margin-top: 200px;
+    margin-top: 50px;
     margin-right: 0;
     width: 300px;
   }
@@ -704,6 +719,19 @@ h4 {
     width: 85%;
     font-size: 16px;
     line-height: 1.2;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .image-row {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    height: auto;
+    overflow: visible;
   }
 
 }
